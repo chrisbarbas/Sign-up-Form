@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: norseBold;
+  src: url(./Norse-Bold.otf);
+}
+
+:root {
+  --contWidth: min(950px, 100vw);
+  --sideWidth: calc(var(--contWidth) / 3.4);
+  --lightGrey: #F9FAFB;
+  --odinText: clamp(1.6rem, 4vw + 1.1rem, 3.8rem);
+  --inputWidth: clamp(42%, 11rem, 16rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+  line-height: 1.3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  width: var(--contWidth);
+  height: 700px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 15px 2px #DDD;
+          box-shadow: 0 0 15px 2px #DDD;
+}
+
+.sidebar {
+  width: var(--sideWidth);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.sidebar-text {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7rem;
+  width: var(--sideWidth);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-text img {
+  height: 4.5rem;
+}
+
+.sidebar-text span {
+  font-size: var(--odinText);
+  font-family: norseBold;
+  color: #DDD;
+}
+
+.sidebar-img img {
+  width: var(--sideWidth);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 700px;
+}
+
+.form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 33%;
+  background-color: var(--lightGrey);
+  border-radius: 0 1rem 0 0;
+}
+
+.form-top-text {
+  width: 75%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-top-text p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-middle {
+  height: 34%;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-container label {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.form-container input::-webkit-input-placeholder {
+  color: #888;
+}
+
+.form-container input:-ms-input-placeholder {
+  color: #888;
+}
+
+.form-container input::-ms-input-placeholder {
+  color: #888;
+}
+
+.form-container input::placeholder {
+  color: #888;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: var(--inputWidth);
+  margin-top: .9rem;
+  margin-left: 2rem;
+}
+
+.form-row input {
+  border: 1px solid #D6D9DC;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 14px;
+  height: initial;
+}
+
+.form-row small.error-message {
+  font-size: 0.8rem;
+  color: #d30c0c;
+  visibility: hidden;
+}
+
+.success input {
+  border: 2px solid #17c017;
+}
+
+.error input {
+  border: 2px solid #d30c0c;
+}
+
+.error small.error-message {
+  visibility: visible;
+}
+
+.form-bottom {
+  height: 33%;
+  background-color: var(--lightGrey);
+  border-radius: 0 0 1rem 0;
+}
+
+.form-bottom button {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 13rem;
+  height: 2.8rem;
+  color: #FFFFFF;
+  background-color: #e28f31;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-bottom button:hover {
+  background-color: #eca34e;
+}
+
+.form-bottom p {
+  font-weight: 500;
+  margin-top: 25px;
+  margin-left: 2rem;
+}
+
+.form-bottom a {
+  text-decoration: none;
+  color: #d37912;
+}
+
+.form-bottom a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (max-width: 610px) {
+  .container {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    height: 90vw;
+  }
+  .sidebar {
+    height: 200px;
+    width: 100vw;
+  }
+  .sidebar-text {
+    width: 100%;
+    height: 80px;
+    top: calc(5vw - 8rem);
+  }
+  .sidebar-text img {
+    height: calc(8vw + 2.6rem);
+  }
+  .sidebar-text span {
+    font-size: calc(6vw + 2.1rem);
+  }
+  .sidebar-img img {
+    width: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0px;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+  }
+  .form {
+    height: 670px;
+  }
+  .form-top-text {
+    margin-top: 1rem;
+  }
+  .form-top-text p {
+    font-size: 0.9rem;
+  }
+  .form-middle {
+    height: 670px;
+    margin-bottom: 30px;
+  }
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-row {
+    width: 70%;
+  }
+  .form-bottom p {
+    margin-bottom: 3rem;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  bottom: 0;
+  padding: 3px;
+  background-color: #FFF;
+  color: white;
+}
+
+footer img {
+  height: 1rem;
+  margin-bottom: -2px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

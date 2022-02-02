@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-text">
+                <img src="./images/odin-lined.png" alt="odin logo">
+                <span>ODIN GYM</span>
+            </div>
+            <div class="sidebar-img">
+                <img src="./images/gym.jpg" alt="photo of gym">
+            </div>
+        </div>
+        <form class="form" action="#" method="post">
+            <div class="form-top">
+                <div class="form-top-text">
+                    <p>This is a fake gym. Odin is a god in mythology. He has a son named Thor, who is absolutely
+                        jacked. Do you want to be worthy of <em>lifting</em> the hammer Mjölnir?</p><br>
+                    <p><em>Train</em> like Thor. Sign up now.</p>
+                </div>
+            </div>
+            <div class="form-middle">
+                <div class="form-container">
+                    <div class="form-row">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="thor">
+                        <small class="error-message">Error Message</small>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="odinson">
+                        <small class="error-message">Error Message</small>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="loki@example.com">
+                        <small class="error-message">Error Message</small>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890">
+                        <small class="error-message">Error Message</small>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" placeholder="password">
+                        <small class="error-message">Error Message</small>
+                    </div>
+                    <div class="form-row">
+                        <label for="c-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="c-password" name="c-password" placeholder="confirm password">
+                        <small class="error-message">Error Message</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-bottom">
+                <div class="form-row">
+                    <button type="submit">Create Account</button>
+                </div>
+                <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Log in </a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>
+            <a href="https://www.theodinproject.com/">the odin project | </a>
+            <a href="https://github.com/chrisbarbas"><img src="./images/github-icon.svg" alt="github logo">
+                chrisbarbas</a></p>
+        <footer>
+            <!-- -->
+            <script src="script.js"></script>
+</body>
+
+</html>
