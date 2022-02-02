@@ -184,6 +184,11 @@ body {
   height: initial;
 }
 
+.form-row input:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+
 .form-row small.error-message {
   font-size: 0.8rem;
   color: #d30c0c;

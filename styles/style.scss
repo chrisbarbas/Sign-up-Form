@@ -131,6 +131,11 @@ body {
         height: initial;
     }
 
+    input:focus {
+        outline: none;
+        border: 1px solid #333;;
+    }
+
     small.error-message {
         font-size: 0.8rem;
         color: rgb(211, 12, 12);

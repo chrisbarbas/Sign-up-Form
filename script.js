@@ -8,7 +8,6 @@ const cPassword = document.querySelector('#c-password');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     checkInputs();
 });
 
@@ -73,10 +72,8 @@ function checkInputs() {
 function setErrorFor(input, message) {
     const formRow = input.parentElement; //.form-row
     const small = formRow.querySelector('small');
-
     //add error message to small 
     small.innerText = message;
-
     //add error class
     formRow.className = 'form-row error';
 }
